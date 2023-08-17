@@ -97,4 +97,5 @@ due to limitations of 8 bit systems.
 ## Using Test Programs
 In the folder examples/bin will be .ilhbin files that are labelled with what they do.
 The source code for these files is available in the examples/asm folder. It will contain
-.ilh files.
+.ilh files. (When creating a .ilh file please do not use full stops in the filename otherwise
+the compiler will use the full name for the .ilhbin file.
