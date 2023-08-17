@@ -92,3 +92,8 @@ recompile, firs remove the .ilhbin file and run again.
 When you run the emulator, input your filename (with extension) and it will run. 
 If your file is more than 255 lines long, some RAM addresses will be inaccessable, 
 due to limitations of 8 bit systems.
+
+## Using Test Programs
+In the folder examples/bin will be .ilhbin files that are labelled with what they do.
+The source code for these files is available in the examples/asm folder. It will contain
+.ilh files.
