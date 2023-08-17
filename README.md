@@ -13,10 +13,11 @@ coded in python
 
 ## Instruction set
 ### ALU Instructions
-
+All answers are stored in the first register provided.
+For example: `AND 00 01` would store the result in register a or '00'
 And: 
 
-And is a simple addition function that can add 2 register together
+And is a simple bitwise and function that can be performed on 2 registers
 using the syntax `AND X Y`, with x and y being the binary identifiers of 
 any register.
 
