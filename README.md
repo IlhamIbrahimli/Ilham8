@@ -61,13 +61,13 @@ Jump based on the state of the parity flag (Jpe for true and Jpo for false)(`JP*
 
 Cmp:
 
-Compares 2 Regisers and sets the equal flag to eitheer True or False. (`CMP X Y`)
+Compares 2 Regisers and sets the equal flag to either True or False. (`CMP X Y`)
 
 ### RAM loading functions
 
 Load:
 
-Load a specific piece of data ot a register. (`LOAD X A` Where a is an 8-bit binary number)
+Load a specific piece of data to a register. (`LOAD X A` Where a is an 8-bit binary number)
 
 Str:
 
