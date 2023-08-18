@@ -15,6 +15,7 @@ coded in python
 ### ALU Instructions
 All answers are stored in the first register provided.
 For example: `AND 00 01` would store the result in register a or '00'
+
 And: 
 
 And is a simple bitwise and function that can be performed on 2 registers
