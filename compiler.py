@@ -1,7 +1,7 @@
 
-
-a_file = open("programexample.ilham", "r")
-compiledfile = open("programexample.ilhambin","a")
+filename = input("Enter Filename:")
+a_file = open(filename, "r")
+compiledfile = open(filename.split(".")[0] + ".ilhbin","a")
 list_of_lists = [(line.strip()).split() for line in a_file]
 
 a_file.close()

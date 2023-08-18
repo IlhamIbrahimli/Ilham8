@@ -2,10 +2,10 @@ filename = input("Enter Filename:")
 file = open(filename,'r')
 
 ram = file.read().splitlines() 
-rega = ''
-regb = ''
-regc = 0
-regd = 0
+rega = '00000000'
+regb = '00000000'
+regc = '00000000'
+regd = '00000000'
 regir = 0
 regiar = 0
 addreg = 0
@@ -106,6 +106,7 @@ def ALU(opcode,reg1,reg2):
         carrybit = reg1[1]
         answer = reg1[1:] + "0"
     elif opcode == '111':
+        carrybit = '0'
         negative = '0'
         currnegative = '0'
         for i in range(7,-1,-1):
@@ -122,8 +123,12 @@ def ALU(opcode,reg1,reg2):
                         break
                     j+=1
                 if currnegative == '0':
-                    reg1[i-j] = '0'
-                    answer = '0'+answer
+                    list1 = list(reg1)
+                    for x in range(i,i-j,-1):
+                        list1[x] = '1'
+                    list1[i-j] = '0'
+                    reg1 = ''.join(list1)
+                    answer = '1'+answer
                 else:
                     negative = '1'
                 currnegative = '0'
@@ -178,7 +183,7 @@ while haltCPU == False:
                 except:
                     haltCPU = True
                     #print("ENDOFFILE")
-            elif regir[0:5] == "011001" or regir[0:5] =="011010":
+            elif regir[0:6] == "011001" or regir[0:6] =="011010":
                 try:
                     addreg = ram[regiar+1]
                 except:
