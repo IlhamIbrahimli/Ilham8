@@ -16,70 +16,70 @@ coded in python
 All answers are stored in the first register provided.
 For example: `AND 00 01` would store the result in register a or '00'
 
-And: 
+**And:**
 
 And is a simple bitwise and function that can be performed on 2 registers
 using the syntax `AND X Y`, with x and y being the binary identifiers of 
 any register.
 
-Or / Xor:
+**Or / Xor:**
 
 These are both simple bitwise functions that can be performed on 2 registers using 
 the syntax `OR X Y` or `XOR X Y`.
 
-Not:
+**Not:**
 
 This is a not function that uses the syntax `NOT X`.
 
-Add / Sub:
+**Add / Sub:**
 
 This is a function that adds/subtracts 2 registers (`ADD X Y`/`SUB X Y`).
 
-Shr / Shl:
+**Shr / Shl:**
 
 Shift right/left. Shifts the value of a register right or left by one bit place Use the syntax `SHR X`/`SHL X`.
 
 ### Jump Functions
 
-Jmp:
+**Jmp:**
 
 Jump without a condition. `JMP Z`(Z representing an 8-bit address)
 
-Jc / Jnc:
+**Jc / Jnc:**
 
 Jump (not) carry jumps depending on the state of the carry flag (`J(N)C Z`)
 
-Jp / Jn:
+**Jp / Jn:**
 
 Jump based on the state of the negative flag (Jp if false and Jn if True)(`J* Z`)
 
-Je / Jne:
+**Je / Jne:**
 
 Jump based on the state of the equal flag using syntax `J(N)E Z`
 
-Jpe / Jpo:
+**Jpe / Jpo:**
 
 Jump based on the state of the parity flag (Jpe for true and Jpo for false)(`JP* Z`)
 
-Cmp:
+**Cmp:**
 
 Compares 2 Regisers and sets the equal flag to either True or False. (`CMP X Y`)
 
 ### RAM loading functions
 
-Load:
+**Load:**
 
 Load a specific piece of data to a register. (`LOAD X A` Where a is an 8-bit binary number)
 
-Str:
+**Str:**
 
 Store a register value to a specific RAM address. (`STR X Z`)
 
-Print:
+**Print:**
 
 Output a register value to the CLI. (`PRINT X`)
 
-Inp:
+**Inp:**
 
 Store a user input to a register. (`INP X`)
 
