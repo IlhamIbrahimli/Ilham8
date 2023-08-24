@@ -95,7 +95,10 @@ When you run the emulator, input your filename (with extension) and it will run.
 due to limitations of 8 bit systems.
 
 ## Using Test Programs
-In the folder examples/bin will be .ilhbin files that are labelled with what they do.
-The source code for these files is available in the examples/asm folder. It will contain
+In the folder [`./examples/bin`](https://github.com/IlhamIbrahimli/Ilham8/tree/main/examples/bin) 
+will be .ilhbin files that are labelled with what they do.
+The source code for these files is available in the 
+[`./examples/asm`](https://github.com/IlhamIbrahimli/Ilham8/tree/main/examples/asm)
+folder. It will contain
 .ilh files. (When creating a .ilh file please do not use full stops in the filename otherwise
 the compiler will use the full name for the .ilhbin file.
