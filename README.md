@@ -101,4 +101,4 @@ The source code for these files is available in the
 [`./examples/asm`](https://github.com/IlhamIbrahimli/Ilham8/tree/main/examples/asm)
 folder. It will contain
 .ilh files. (When creating a .ilh file please do not use full stops in the filename otherwise
-the compiler will use the full name for the .ilhbin file.
+the compiler will not use the full name when naming the .ilhbin file.)
