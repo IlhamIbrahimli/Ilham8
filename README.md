@@ -102,3 +102,9 @@ The source code for these files is available in the
 folder. It will contain
 .ilh files. (When creating a .ilh file please do not use full stops in the filename otherwise
 the compiler will not use the full name when naming the .ilhbin file.)
+
+## Issues known
+
+Subtract doesn't work properly as I am using unsigned numbers.
+
+Will fix soon. I know the fix just needs to be implemented.
