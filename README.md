@@ -87,7 +87,7 @@ For example: `AND 00 01` would store the result in register a or '00'
 
 Run the compiler and input the name of your .ilh file (including the extension).
 The compiler will output a .ilhbin file (Name unchanged) to the same folder. To
-recompile, firs remove the .ilhbin file and run again.
+recompile, first remove the .ilhbin file and run again.
 
 ## Emulating a .ilhbin file
 
